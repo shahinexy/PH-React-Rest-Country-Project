@@ -9,7 +9,7 @@ const Country = ({country, handleAsMark}) => {
     const handleVisited = ()=>{
         setVisited(!visited)
     }
-    console.log(handleAsMark);
+
     return (
         // conditional styling 
         <div className={`country ${visited && 'visited'}`}>
@@ -19,7 +19,7 @@ const Country = ({country, handleAsMark}) => {
             <p>Population: {population}</p>
             <p><small>Code:{cca3} </small></p>
             <button onClick={handleVisited}>{visited ? 'Visited' : 'Not Visited'}</button> 
-            <button>Mark as Readed</button>
+            <button onClick={()=> handleAsMark(country)}>Mark as Readed</button>
             <br />
             {visited ? 'I have visited this country' : 'Don\'t visited yet'}
         </div>
