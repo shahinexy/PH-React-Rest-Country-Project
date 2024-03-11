@@ -1,0 +1,8 @@
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid gray;
+    border-radius: 15px;
+    gap: 10px;
+    text-align: center;
+}
