@@ -10,8 +10,9 @@ const Country = ({country}) => {
         setVisited(!visited)
     }
     return (
-        <div className="country">
-            <h3>Name: {name?.common}</h3>
+        // conditional styling 
+        <div className={`country ${visited && 'visited'}`}>
+            <h3 style={{color: visited ? 'green' : 'purple'}}>Name: {name?.common}</h3>
             <img src={flags.png} alt="" />
             <p>Area: {area}</p>
             <p>Population: {population}</p>

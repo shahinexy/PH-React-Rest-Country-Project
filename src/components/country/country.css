@@ -5,3 +5,6 @@
     padding: 15px;
     border-radius: 10px;
 }
+.visited{
+    background: rgb(224, 211, 65);
+}
