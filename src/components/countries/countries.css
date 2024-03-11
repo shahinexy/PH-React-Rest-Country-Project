@@ -6,3 +6,8 @@
     gap: 10px;
     text-align: center;
 }
+.flag_contaienr img{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+}
